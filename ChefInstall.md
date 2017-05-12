@@ -1,35 +1,36 @@
-#Chef‚ÌƒCƒ“ƒXƒg[ƒ‹‚Æİ’è
+# Chefã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã¨è¨­å®š
 
-QlƒTƒCƒgF[http://note.miyabis.jp/2013/12/chef-%E3%82%92-windows-%E3%81%A7%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B.html]
+å‚è€ƒã‚µã‚¤ãƒˆï¼š[http://note.miyabis.jp/2013/12/chef-%E3%82%92-windows-%E3%81%A7%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B.html]
 
-#Chef‚ÌƒCƒ“ƒXƒg[ƒ‹
-1. 
-http://www.opscode.com/chef/install/#options
-‚Ü‚½‚Í
-http://opscode.com/chef/install.msi
+# Chefã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+1. Chef Client ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€‚
 
-ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚Å‰º‹L‚ğÀs‚·‚é‚Æƒo[ƒWƒ‡ƒ“‚ª•\¦‚³‚ê‚éB
+[URL]: http://www.opscode.com/chef/install/#options
+ã¾ãŸã¯
+[URL]: http://opscode.com/chef/install.msi
+
+ã‚³ãƒãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§ä¸‹è¨˜ã‚’å®Ÿè¡Œã™ã‚‹ã¨ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã€‚
 chef-solo -v
 
 
-1. Windows ŠÂ‹«—p‚Ì Cookbook æ“¾
-ˆÈ‰º‚Ì‚Q‚Â‚ğæ“¾‚·‚éB
+1. Windows ç’°å¢ƒç”¨ã® Cookbook å–å¾—
+ä»¥ä¸‹ã®ï¼’ã¤ã‚’å–å¾—ã™ã‚‹ã€‚
 http://community.opscode.com/cookbooks/windows
 http://community.opscode.com/cookbooks/chef_handler
 
 
-1. chef-solo ‚Ìİ’è
+1. chef-solo ã®è¨­å®š
 C:?chef?solo.rb
 
-```ˆÈ‰º‚ğ“ü—Í‚·‚é
+```ä»¥ä¸‹ã‚’å…¥åŠ›ã™ã‚‹
 cookbook_path ["C:?chef?repo?cookbooks"]
 ```
 
-1. chef‚Åˆ³kƒtƒ@ƒCƒ‹‚ğ‰ğ“€‚Æ‚©‚·‚é‚Æ‚«‚ÉƒRƒ}ƒ“ƒh‚ÅÀs‚Å‚«‚é‰ğ“€ƒc[ƒ‹(7-zip)[Inx-7-zip]
-[Inx-7-zip]: https://supermarket.chef.io/cookbooks/seven_zip "chef‚Åˆ³kƒtƒ@ƒCƒ‹‚ğ‰ğ“€‚Æ‚©‚·‚é‚Æ‚«‚ÉƒRƒ}ƒ“ƒh‚ÅÀs‚Å‚«‚é‰ğ“€ƒc[ƒ‹(7-zip)"
+1. chefã§åœ§ç¸®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£å‡ã¨ã‹ã™ã‚‹ã¨ãã«ã‚³ãƒãƒ³ãƒ‰ã§å®Ÿè¡Œã§ãã‚‹è§£å‡ãƒ„ãƒ¼ãƒ«(7-zip)[Inx-7-zip]
+[Inx-7-zip]: https://supermarket.chef.io/cookbooks/seven_zip "chefã§åœ§ç¸®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£å‡ã¨ã‹ã™ã‚‹ã¨ãã«ã‚³ãƒãƒ³ãƒ‰ã§å®Ÿè¡Œã§ãã‚‹è§£å‡ãƒ„ãƒ¼ãƒ«(7-zip)"
 
-```ˆÈ‰º‚ğ“ü—Í‚·‚é
-C:?chef?repo ƒtƒHƒ‹ƒ_‚É‰º‹L‚Ì“à—e‚Å 7-zip.json ƒtƒ@ƒCƒ‹‚ğì¬‚·‚éB
+```ä»¥ä¸‹ã‚’å…¥åŠ›ã™ã‚‹
+C:?chef?repo ãƒ•ã‚©ãƒ«ãƒ€ã«ä¸‹è¨˜ã®å†…å®¹ã§ 7-zip.json ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã™ã‚‹ã€‚
 {
 	"run_list": ["recipe[7-zip]"]
 }
