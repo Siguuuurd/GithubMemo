@@ -24,8 +24,8 @@ C:\chef\solo.rb
 ``` 以下を入力する
 cookbook_path ["C:\chef\repo\cookbooks"]
 ```
+1. [chefで圧縮ファイルを解凍とかするときにコマンドで実行できる解凍ツール(7-zip)][Inx-7-zip]
 
-1. chefで圧縮ファイルを解凍とかするときにコマンドで実行できる解凍ツール(7-zip)[Inx-7-zip]
 [Inx-7-zip]: https://supermarket.chef.io/cookbooks/seven_zip "chefで圧縮ファイルを解凍とかするときにコマンドで実行できる解凍ツール(7-zip)"
 
 ``` 以下を入力する
