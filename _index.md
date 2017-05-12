@@ -6,4 +6,5 @@
 
 
 
-[Idx-Chef]: https://github.com/Siguuuurd/GithubMemo/blob/master/README.md "Chef"
+[Idx-Chef]: https://github.com/Siguuuurd/GithubMemo/blob/master/ChefMemo.md "Chef"
+ 
