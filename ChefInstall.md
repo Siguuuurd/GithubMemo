@@ -4,10 +4,9 @@
 
 # Chefのインストール
 1. Chef Client をダウンロード。
-
-[URL]: http://www.opscode.com/chef/install/#options
-または
-[URL]: http://opscode.com/chef/install.msi
+下記の２つのURLから、DLするのはどちらでもよい。
++ http://www.opscode.com/chef/install/#options
++ http://opscode.com/chef/install.msi
 
 コマンドプロンプトで下記を実行するとバージョンが表示される。
 chef-solo -v
@@ -15,23 +14,29 @@ chef-solo -v
 
 1. Windows 環境用の Cookbook 取得
 以下の２つを取得する。
-http://community.opscode.com/cookbooks/windows
-http://community.opscode.com/cookbooks/chef_handler
++ http://community.opscode.com/cookbooks/windows
++ http://community.opscode.com/cookbooks/chef_handler
 
 
 1. chef-solo の設定
-C:?chef?solo.rb
+C:\chef\solo.rb
 
-```以下を入力する
-cookbook_path ["C:?chef?repo?cookbooks"]
+``` 以下を入力する
+cookbook_path ["C:\chef\repo\cookbooks"]
 ```
 
 1. chefで圧縮ファイルを解凍とかするときにコマンドで実行できる解凍ツール(7-zip)[Inx-7-zip]
 [Inx-7-zip]: https://supermarket.chef.io/cookbooks/seven_zip "chefで圧縮ファイルを解凍とかするときにコマンドで実行できる解凍ツール(7-zip)"
 
-```以下を入力する
+``` 以下を入力する
 C:?chef?repo フォルダに下記の内容で 7-zip.json ファイルを作成する。
 {
 	"run_list": ["recipe[7-zip]"]
 }
+```
+
+スタートメニューからコマンドプロンプトを管理者として実行する。
+コマンドプロンプトで下記を実行する。
+```
+chef-solo -j c:¥chef¥repo¥7-zip.json
 ```
