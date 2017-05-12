@@ -1,7 +1,9 @@
 #メモ一覧
 
+※インデックスの「Idx-Chef」は項目とリンクが同じ英数字にする。記号はどれが使えるか？
 
-1. [Chef][Chef]
+1. [Chef][Idx-Chef]
 
 
-[Chef]: https://github.com/Siguuuurd/GithubMemo/blob/master/README.md "Chef"
+
+[Idx-Chef]: https://github.com/Siguuuurd/GithubMemo/blob/master/README.md "Chef"
