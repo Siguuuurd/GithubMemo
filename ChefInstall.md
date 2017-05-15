@@ -1,4 +1,4 @@
-# Chefのインストールと設定
+# Chefのインストールと設定について
 
 参考サイト：[http://note.miyabis.jp/2013/12/chef-%E3%82%92-windows-%E3%81%A7%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B.html]
 
