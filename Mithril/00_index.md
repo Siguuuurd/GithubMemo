@@ -1,6 +1,6 @@
 #Index
 
-![画像1](https://github.com/Siguuuurd/GithubMemo/blob/master/images/usagi.jpg "画像")
+![画像1](https://github.com/Siguuuurd/GithubMemo/tree/master/image/usagi.jpg "画像")
 
 
 ## Mithrilとは？
