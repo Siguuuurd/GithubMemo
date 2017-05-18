@@ -1,0 +1,32 @@
+//チュートリアルのソース
+http://mithril-ja.js.org/simple-application.html
+
+
+
+// src/models/User.js
+
+// サーバーとコミュニケーションするには、MithrilのXHRユーティリティである m.requestが使用できる
+// Mithrilをインクルードする
+var m = require("mithril")
+
+var User = {
+	list: []
+
+	// XHR(Ajax)呼び出しを行う関数
+	// 「loadList」は関数の名称(任意)
+	loadList: function() {
+
+	// REM REST APIへの呼び出し：[URL][http://rem-rest-api.herokuapp.com/]
+	// このモックのREST APIを使ってGET https://rem-rest-api.herokuapp.com/api/usersエンドポイントにアクセスすると、ユーザーのリストが返ってくる。
+	// m.requestを使ってXHRのリクエストを行い、そのエンドポイントのレスポンスを取得する
+		method: "GET",
+		url: "https://rem-rest-api.herokuapp.com/api/users",
+		withCredentials: true,	// 「withCredentials: true」はREM APIで必要となる、クッキーの送受信を有効化する設定
+		})
+		.then(function(result) {
+			User.list = result.data
+		})
+	},
+}
+
+module.exports = User
